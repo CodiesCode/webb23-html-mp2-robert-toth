@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="pizzeria malmö västra hamnen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Västra Hamnens Pizzeria - Meny</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="Bilder/vhplogo_200x200.png">
+</head>
+    <body>
+    <div class="backgroundbanner">
+        <nav class="topnav">
+            <div id="header-image">
+                <img src="Bilder/vhplogo_200x200.png" alt="logo">
+            </div>
+            <div id="myLinks"> 
+                <a href="index.html">Hem</a>
+                <a href="meny.html">Meny</a>
+                <a href="bokning.html">Bokning</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <h1>Meny</h1>
+            <section>
+                Här kan ni ta en titt på vad vi har för rätter att erbjuda!
+            </section>       
+            <div>
+            <ul>
+                <li class="menu-item"> <!-- Class för hela menylistan -->
+                    <h4>AL Salame 155:-</h4>
+                    <img src="Bilder/alsalame.webp" alt="al salame">
+                    <br>
+                    <article>Mozzarella, tre sorters salami & färsk basilika</article>
+                </li>
+                <li class="menu-item">
+                    <h4>Bolognese 120:-</h4>
+                    <img src="Bilder/bolognese.webp" alt="bolognese">
+                    <br>
+                    <article>Köttfärs, lök & vitlök</article>
+                </li>     
+                <li class="menu-item">
+                    <h4>Calzone 130:-</h4>
+                    <img src="Bilder/calzone.jpg" alt="calzone">
+                    <br>
+                    <article>Välj mellan skinka & räkor</article>
+                </li>
+                <li class="menu-item">
+                    <h4>Mozzarella 125:-</h4>
+                    <img src="Bilder/mozzarella.webp" alt="mozzarella">
+                    <br>
+                    <article>Mozzarella, champinjoner, paprika & tomater</article>
+                </li>
+                <li class="menu-item">
+                    <h4>Vesuvio 115:-</h4>
+                    <img src="Bilder/vesuvio.jpg" alt="vesuvio">
+                    <br>
+                    <article>Skinka</article>
+                </li>
+            </ul>
+    </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+             <div class="footer-content">
+                <footer>
+                    @Copyright - Västra Hamnens Pizzeria | <a href="tel:+46406316117" target="_blank">040-6316117</a>  
+                    | <a href="mailto:info@vhpizzeria.se" target="_blank">E-Mail</a> |
+                         <a href="https://www.facebook.com/VastraHamnensPizzeria/?locale=sv_SE" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com/noipizzamalmo/" target="_blank">Instagram</a>
+                </footer>
+            </div>
+    </body>
+</html>                

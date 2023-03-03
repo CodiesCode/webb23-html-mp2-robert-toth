@@ -1,0 +1,189 @@
+*{
+    /* Gäller för alla hemsidors gränsområde */
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+.backgroundbanner {
+    /* Bakgrundsbildens mått och toning för alla sidor */
+    width: 100%;
+    height: 6000px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+           url(../Bilder/mozzarella.webp);
+    background-size: cover;
+    background-position: center;
+}
+h1 {
+    /* Rubriker på alla sidor */
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+h4 {
+    /* Texten för all namn påm pizzorna, pris och beskrivning */
+    font-size: 10px;
+    padding: var(--custompad);
+}
+section {
+    /* Använde semantisk tag för texten under ordet "Meny" */
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+.menu-item {
+    /* listan (class) för hela menyn för text ovanför bild och bilderna */
+
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px;
+    padding-top: var(--custompad);
+    padding-bottom: var(--custompad);
+}
+
+article {
+    /* texten under bilderna på pizzorna i menyn */
+    color: #ffffff;
+    border-style: ;
+    border-color: var(--topbotblue);
+}
+
+.menu-item h4 {
+    /* Texten ovanför bilderna på pizzorna i menyn */
+    color: #ffffff;
+    text-align: center;
+}
+.form-row {
+    /* Flex- och grid box för bokningssidan  */
+    display: flex grid;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form select,
+form input {
+    /* formulär på bokningssidan storlek och style etc */
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    font-weight: 300;
+}
+form input[type="text"], /* färg på bakgrund i formulären när du väl har klickat för att välja */
+form input[type="number"],
+form input::placeholder,
+select {
+    color: #9a9a9a;
+}
+form input[type="submit"] {
+    /* design på knapp "BEKRÄFTA" på bokningssidan samt transition */
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: ease 1000ms;
+}
+form input[type="submit"]:hover {
+    /* skifta color & opacity på "BEKRÄFTA" knappen på bokningssidan */
+    background: #eb3e1f;
+    opacity: 80%;
+}
+
+body {
+    /* skapa flex-box med column för alla sidor och dess properties */
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    margin: 0 auto;
+    height: 100vh;
+}
+:root {
+    /* variabler för temafärg för headern och footern. 
+            custompad är padding jag har använt på olika ställen */
+    --greyblue: #203449;
+    --topbotblue: #072663b3;
+    --custompad: 20px;
+}
+
+.topnav {
+    /* design av drop-down menyn  */
+    overflow: hidden;
+    background-color: var(--topbotblue);
+    position: sticky;
+    margin-bottom: border;
+}
+#header-image img {
+    /* egenskaper för loggan på headern */
+    width: 50px;
+    max-height: 100%;
+}
+.topnav #myLinks {
+    /* gömma länkarna i nav-menyn efter man har gjort sitt val */
+    display: none;
+}
+
+.topnav a {
+    /* nav-menyns stil  */
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
+
+.topnav a:hover {
+    /* gråa menyvalens alternativ när man hovrar */
+    transition-duration: 500ms;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 500ms;
+}
+.topnav a.icon :hover {
+    /* lagt till att menyknappen ska rotera när man hovrar över den */
+    rotate: 180deg;
+    transition: 400ms;
+}
+footer {
+    /* Storlek och färg på footern  */
+    background: var(--topbotblue);
+    padding-top: var(--custompad);
+    padding-bottom: var(--custompad);
+    width: 100%;
+    height: 2rem;
+    position: sticky;
+}
+.footer-content {
+    /* Footerns position på sidorna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+a:visited {
+    /* vilka färger hyperlänkarna ska ha vid olika stadier */
+    color: #ffffff;
+}
+a:link {
+    color: #ffffff;
+}
+a:hover {
+    color: #ffffff71;
+}
